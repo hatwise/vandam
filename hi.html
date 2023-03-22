@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>thunder</title>
+	<style>
+		.square-button {
+			background-color: yellow;
+			color: green;
+			border: none;
+			padding: 100px 200px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+	<script>
+		function changeText() {
+			document.getElementById("hello").innerHTML = "Hey bro,you blew my concentration!";
+		}
+	</script>
+</head>
+<body>
+	<button class="square-button" onclick="changeText()">Push me,bro</button>
+	<p id="hello">Hello, world!</p>
+</body>
+</html>
