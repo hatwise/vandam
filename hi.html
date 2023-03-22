@@ -3,23 +3,36 @@
 <head>
 	<title>thunder</title>
 	<style>
+		#myImage {
+			width: 500px;
+			height: 300px;
+			background-color: white;
+			background-image: url('redcol.jpeg'); /* set initial background image */
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
 		.square-button {
 			background-color: yellow;
 			color: green;
 			border: none;
-			padding: 100px 200px;
+			padding: 10px 20px;
 			border-radius: 5px;
 			cursor: pointer;
 		}
 	</style>
 	<script>
-		function changeText() {
+		function changeImageBackground() {
+			var image = document.getElementById("myImage");
+			image.style.backgroundColor = "transparent"; /* make the background color transparent */
+			image.style.backgroundImage = "url('hulk.jpeg')"; /* set the new background image */
 			document.getElementById("hello").innerHTML = "Hey bro,you blew my concentration!";
 		}
 	</script>
 </head>
 <body>
-	<button class="square-button" onclick="changeText()">Push me,bro</button>
-	<p id="hello">Hello, world!</p>
+	<p id="hello">Welcome back BRUH</p>
+	<div id="myImage"></div> <!-- use a div instead of img element to apply background image -->
+	<button class="square-button" onclick="changeImageBackground()">Push me bro</button>
 </body>
 </html>
